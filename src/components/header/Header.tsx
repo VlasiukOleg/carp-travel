@@ -18,7 +18,7 @@ export default function Header({}: HeaderProps) {
 
   return (
     <>
-      <div className="pt-9">
+      <div className="pt-9 absolute inset-x-0 top-0">
         <Container>
           <div className="flex justify-between items-center">
             <Logo pathname="/" src="/icons/logo.svg" alt="logo icon" />
