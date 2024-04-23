@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -14,3 +13,7 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #010a05;
+  color: #ffffff;
+}
