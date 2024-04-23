@@ -1,0 +1,47 @@
+.button {
+  position: relative;
+  width: 100%;
+
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2.67;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  cursor: pointer;
+
+  transition: all 2000ms ease-in-out;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: inline-block;
+  width: 42px;
+  height: 53px;
+  background-image: url('/icons/mobile-btn-bord-left.svg');
+  background-size: cover;
+}
+
+.button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  display: inline-block;
+  width: 42px;
+  height: 53px;
+  background-image: url('/icons/mobile-btn-bord-right.svg');
+  background-size: cover;
+}
