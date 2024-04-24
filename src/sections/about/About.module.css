@@ -1,0 +1,75 @@
+.about {
+  background-image: linear-gradient(
+      to right,
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
+    ),
+    url(/image/about/background-about-320.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/about/background-about-320@2x.jpg);
+    }
+  }
+}
+
+/* --------------Tablet-------------- */
+
+@media screen and (min-width: 768px) {
+  .about {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/about/background-about-768.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/about/background-about-768@2x.jpg);
+    }
+  }
+}
+
+/* -------------------Desktop -----------------*/
+
+@media screen and (min-width: 1280px) {
+  .about {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/about/background-about-1280.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/about/background-about-1280@2x.jpg);
+    }
+  }
+}
