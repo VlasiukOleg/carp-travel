@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react';
 
-import Container from '../container/Container';
-import Logo from '@/components/ui-kit/logo/Logo';
-import MenuBtn from '@/components/ui-kit/menuBtn/MenuBtn';
-import MobileMenu from '../modules/mobileMenu/MobileMenu';
+import Container from '../Container/Container';
+import Logo from '@/components/UiKit/Logo/Logo';
+import MenuBtn from '@/components/UiKit/MenuBtn/MenuBtn';
+import MobileMenu from '../Modules/MobileMenu/MobileMenu';
 
 export interface HeaderProps {}
 

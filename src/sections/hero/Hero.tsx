@@ -2,9 +2,9 @@ import React from 'react';
 
 import styles from './hero.module.css';
 
-import Section from '@/components/ui-kit/section/Section';
-import Container from '@/components/container/Container';
-import Button from '@/components/ui-kit/button/Button';
+import Section from '@/components/UiKit/Section/Section';
+import Container from '@/components/Container/Container';
+import Button from '@/components/UiKit/Button/Button';
 
 import hero from '../../data/hero.json';
 

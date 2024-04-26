@@ -1,0 +1,346 @@
+.offer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.offer1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
+    ),
+    url(/image/offer/background-offer1-320.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer1-320@2x.jpg);
+    }
+  }
+}
+
+.offer2 {
+  background-image: linear-gradient(
+      to right,
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
+    ),
+    url(/image/offer/background-offer2-320.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer2-320@2x.jpg);
+    }
+  }
+}
+
+.offer3 {
+  background-image: linear-gradient(
+      to right,
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
+    ),
+    url(/image/offer/background-offer3-320.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer3-320@2x.jpg);
+    }
+  }
+}
+
+.offer4 {
+  background-image: linear-gradient(
+      to right,
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
+    ),
+    url(/image/offer/background-offer4-320.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer4-320@2x.jpg);
+    }
+  }
+}
+
+.offer5 {
+  background-image: linear-gradient(
+      to right,
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
+    ),
+    url(/image/offer/background-offer5-320.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer5-320@2x.jpg);
+    }
+  }
+}
+
+/* --------------Tablet-------------- */
+
+@media screen and (min-width: 768px) {
+  .offer1 {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/offer/background-offer1-768.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer1-768@2x.jpg);
+    }
+  }
+
+  .offer2 {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/offer/background-offer2-768.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer2-768@2x.jpg);
+    }
+  }
+
+  .offer3 {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/offer/background-offer3-768.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer3-768@2x.jpg);
+    }
+  }
+
+  .offer4 {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/offer/background-offer4-768.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer4-768@2x.jpg);
+    }
+  }
+
+  .offer5 {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/offer/background-offer5-768.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer5-768@2x.jpg);
+    }
+  }
+}
+
+/* -------------------Desktop -----------------*/
+
+@media screen and (min-width: 1280px) {
+  .offer1 {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/offer/background-offer1-1280.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer1-1280@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .offer2 {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/offer/background-offer2-1280.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer2-1280@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .offer3 {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/offer/background-offer3-1280.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer3-1280@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .offer4 {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/offer/background-offer4-1280.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer4-1280@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .offer5 {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/image/offer/background-offer5-1280.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/image/offer/background-offer5-1280@2x.jpg);
+    }
+  }
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Section from '@/components/ui-kit/section/Section';
-import Container from '@/components/container/Container';
-import SectionTitle from '@/components/ui-kit/sectionTitle/SectionTitle';
+import Section from '@/components/UiKit/Section/Section';
+import Container from '@/components/Container/Container';
+import SectionTitle from '@/components/UiKit/SectionTitle/SectionTitle';
 
 import about from '../../data/about.json';
 

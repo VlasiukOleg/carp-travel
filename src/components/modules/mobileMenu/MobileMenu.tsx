@@ -2,8 +2,8 @@ import React from 'react';
 
 import clsx from 'clsx';
 
-import MenuBtn from '@/components/ui-kit/menuBtn/MenuBtn';
-import NavList from '@/components/ui-kit/navList/NavList';
+import MenuBtn from '@/components/UiKit/MenuBtn/MenuBtn';
+import NavList from '@/components/UiKit/NavList/NavList';
 
 export interface MobileMenuProps {
   onToggleMobileMenu: () => void;
