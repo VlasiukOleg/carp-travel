@@ -5,6 +5,7 @@ import Hero from '@/sections/Hero/Hero';
 import About from '@/sections/About/About';
 import OfferSwiper from '@/components/Modules/OfferSwiper/OfferSwiper';
 import Career from '@/sections/Career/Career';
+import Gallery from '@/sections/Gallery/Gallery';
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       </div>
       <About />
       <OfferSwiper />
-      <Career/>
+      <Career />
+      <Gallery />
     </main>
   );
 }

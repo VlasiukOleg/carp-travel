@@ -11,7 +11,7 @@ import InputField from '@/components/UiKit/InputField/InputField';
 export type FormValues = {
   fullname: string;
   email: string;
-  position: string;
+  position?: string;
   phone: string;
   message?: string;
   confirm: boolean;
@@ -20,7 +20,7 @@ export type FormValues = {
 const careerValidationSchema = Yup.object({
   fullname: Yup.string().required('x incorrect name'),
   email: Yup.string().email('x incorrect email').required('x incorrect email'),
-  position: Yup.string().required(),
+  position: Yup.string(),
   phone: Yup.string().required('x incorrect phone'),
   message: Yup.string(),
   confirm: Yup.boolean().required(),
@@ -82,7 +82,7 @@ export default function CareerForm(props: CareerFormProps) {
         />
       </label>
 
-      <label className="flex gap-2 mb-4 font-extralight text-xs">
+      <label className="flex gap-2 mt-4 mb-4 font-extralight text-xs">
         <input
           type="checkbox"
           className="hidden peer/draft"
@@ -98,7 +98,12 @@ export default function CareerForm(props: CareerFormProps) {
         </span>
       </label>
 
-      <button type="submit">Send</button>
+      <button
+        type="submit"
+        className="block font-medium text-3xl ml-auto uppercase"
+      >
+        Send
+      </button>
     </form>
   );
 }

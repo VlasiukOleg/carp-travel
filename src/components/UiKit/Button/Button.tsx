@@ -2,7 +2,8 @@ import React from 'react';
 
 import styles from './button.module.css';
 
-export interface ButtonProps {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 
