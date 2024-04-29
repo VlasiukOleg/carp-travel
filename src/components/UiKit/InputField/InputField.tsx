@@ -6,10 +6,11 @@ import { FieldError } from 'react-hook-form';
 import { UseFormRegister } from 'react-hook-form';
 
 import { FormValues } from '@/components/Modules/CareerForm/CareerForm';
+import { FormContactValues } from '@/components/Modules/ContactForm/ContactForm';
 
 export interface InputFieldProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
-  register: UseFormRegister<FormValues>;
+  register: UseFormRegister<FormValues | FormContactValues>;
   label: string;
   name: keyof FormValues;
   error?: FieldError | undefined;

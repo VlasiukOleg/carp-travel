@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import Section from '@/components/UiKit/Section/Section';
 import Container from '@/components/Container/Container';
@@ -7,9 +6,6 @@ import SectionTitle from '@/components/UiKit/SectionTitle/SectionTitle';
 import GalleryImageList from '@/components/Modules/GalleryImageList/GalleryImageList';
 
 import gallery from '../../data/gallery.json';
-import gallery1 from '../../../public/image/gallery/gallery1.jpg';
-import gallery2 from '../../../public/image/gallery/gallery2.jpg';
-import gallery3 from '../../../public/image/gallery/gallery3.jpg';
 
 import styles from './Gallery.module.css';
 
