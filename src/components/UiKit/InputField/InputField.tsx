@@ -10,7 +10,7 @@ import { FormContactValues } from '@/components/Modules/ContactForm/ContactForm'
 
 export interface InputFieldProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
-  register: UseFormRegister<FormValues | FormContactValues>;
+  register: UseFormRegister<FormValues>;
   label: string;
   name: keyof FormValues;
   error?: FieldError | undefined;
