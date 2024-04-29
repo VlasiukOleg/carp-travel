@@ -17,7 +17,7 @@ export default function MobileMenu({
   return (
     <div
       className={clsx(
-        'fixed z-50 top-0 left-0 w-screen h-screen bg-gray-800  flex justify-center items-center transition-opacity',
+        'fixed z-50 top-0 left-0 w-screen h-screen backdrop-filter backdrop-blur-md bg-opacity-75 bg-gray-800  overflow-hidden flex justify-center items-center transition-opacity',
         mobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
       )}
     >

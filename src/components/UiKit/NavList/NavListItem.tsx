@@ -10,7 +10,7 @@ export default function NavListItem({ children, key }: NavListItemProps) {
   return (
     <li key={key}>
       <Link href="#">
-        <span className="text-lg">{children}</span>
+        <span className="text-lg md:text-sm">{children}</span>
       </Link>
     </li>
   );

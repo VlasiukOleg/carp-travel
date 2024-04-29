@@ -10,7 +10,7 @@ export default function MenuBtn({ children, ...props }: MenuBtnProps) {
     <button
       {...props}
       type="button"
-      className="text-sm bg-transparent cursor-pointer uppercase"
+      className="text-sm bg-transparent cursor-pointer uppercase md:hidden"
     >
       {children}
     </button>
