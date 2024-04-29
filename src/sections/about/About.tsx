@@ -15,22 +15,42 @@ export default function About({}: AboutProps) {
     <div className={styles.about}>
       <Section>
         <Container>
-          <SectionTitle>
-            <span className="font-thin">{about.title}</span> {about.subtitle}
-          </SectionTitle>
-          <p className="pb-5 text-sm font-extralight max-w-[180px]">
-            <span className="font-normal">
-              {about.highlightedDescriptionMain}
-            </span>
-            {about.descriptionMain}
-          </p>
-          <p className="pb-10 text-sm font-extralight max-w-[180px]">
-            <span className="font-normal">
-              {about.highlightedDescriptionPrimary}
-            </span>
-            {about.descriptionPrimary}
-          </p>
-          <div className="pb-10 text-sm font-extralight text-end">
+          <div className="md:flex md:gap-20 md:mb-16">
+            <div className="md:flex md:flex-col md:justify-between md:flex-grow">
+              <SectionTitle>
+                <span className="font-thin">{about.title}</span>{' '}
+                {about.subtitle}
+              </SectionTitle>
+              <div className="text-sm font-extralight hidden md:block md:text-base">
+                <div className="ml-auto inline-block">
+                  <p className="uppercase font-normal">
+                    {about.actionTextMain}
+                  </p>
+                  <p className="uppercase font-normal text-end">
+                    {about.actionTextPrimary}
+                  </p>
+                  <p className="">{about.actionTextSecondary}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="max-w-[180px] md:max-w-[220px]">
+              <p className="mb-5 text-sm font-extralight  md:mb-4 md:text-base">
+                <span className="font-normal">
+                  {about.highlightedDescriptionMain}
+                </span>
+                {about.descriptionMain}
+              </p>
+              <p className="mb-10 text-sm font-extralight md:text-base md:mb-0">
+                <span className="font-normal">
+                  {about.highlightedDescriptionPrimary}
+                </span>
+                {about.descriptionPrimary}
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-10 text-sm font-extralight text-end md:hidden">
             <div className="ml-auto inline-block">
               <p className="uppercase font-normal text-start">
                 {about.actionTextMain}
@@ -39,7 +59,8 @@ export default function About({}: AboutProps) {
               <p className="">{about.actionTextSecondary}</p>
             </div>
           </div>
-          <p className="text-sm font-extralight">
+
+          <p className="text-sm font-extralight md:text-base md:max-w-[463px] md:ml-auto">
             <span className="font-normal">
               {about.highlightedDescriptionSecondary}
             </span>

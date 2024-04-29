@@ -6,7 +6,7 @@ export interface SectionTitleProps {
 
 export default function SectionTitle({ children }: SectionTitleProps) {
   return (
-    <h2 className="text-[40px] text-left font-medium tracking-tighter uppercase">
+    <h2 className="text-[40px] text-left font-medium tracking-tighter uppercase md:text-[67px] md:leading-none">
       {children}
     </h2>
   );
