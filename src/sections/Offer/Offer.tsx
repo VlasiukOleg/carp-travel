@@ -39,7 +39,7 @@ export default function Offer({
               </SectionTitle>
             </div>
 
-            <p className="font-thin text-[43px] text-right mt-6 mb-4 md:text-[67px] md:my-0 md:leading-none">
+            <p className="font-thin text-[43px] text-right mt-6 mb-4 md:text-[67px] md:my-0 md:leading-none xl:text-[98px]">
               0{slide.id}/
               <span className="text-white opacity-20">
                 0{offerSlides.length}
@@ -48,16 +48,16 @@ export default function Offer({
           </div>
 
           <div className="md:flex md:gap-5">
-            <div className="md:w-[463px] md:h-[370px]">
+            <div className="md:w-[463px] md:h-[370px] xl:w-[607px] xl:h-[429px]">
               <Image src={slide.image} alt={slide.title} loading="lazy" />
             </div>
 
-            <div>
+            <div className="xl:flex xl:flex-wrap xl:gap-14 xl:max-w-[605px] xl:relative">
               {' '}
               <p className="text-xs text-right font-extralight mt-3 mb-6 tracking-[.2em] md:hidden">
                 {slide.actionText}
               </p>
-              <ul className="flex flex-col gap-4 items-start">
+              <ul className="flex flex-col gap-4 items-start xl:gap-6">
                 {offerSlides.map((slide, index) => (
                   <li key={slide.id}>
                     <button
@@ -73,7 +73,7 @@ export default function Offer({
 
                       <span
                         className={clsx(
-                          'text-xl font-extralight leading-none uppercase  md:text-[22px]',
+                          'text-xl font-extralight leading-none uppercase  md:text-[22px] xl:text-[28px]',
                           activeSlide === index && 'font-medium'
                         )}
                       >
@@ -86,17 +86,26 @@ export default function Offer({
                   </li>
                 ))}
               </ul>
-              <p className="text-xs text-left font-extralight mt-6 tracking-[.2em]">
+              <p
+                className={clsx(
+                  'text-xs text-left font-extralight mt-6 tracking-[.2em] xl:mt-0  xl:absolute',
+                  slide.id === 1 && 'xl:top-[6px] xl:left-[310px]',
+                  slide.id === 2 && 'xl:top-[53px] xl:left-[295px]',
+                  slide.id === 3 && 'xl:top-[114px] xl:left-[284px]',
+                  slide.id === 4 && 'xl:top-[177px] xl:left-[284px]',
+                  slide.id === 5 && 'xl:top-[227px] xl:left-[286px]'
+                )}
+              >
                 {slide.actionText}
               </p>
               <p
                 className={clsx(
-                  'text-sm font-extralight text-start  max-w-[280px] md:text-[13px] md:max-w-[221px]',
-                  slide.id === 1 && 'mt-[34px]',
+                  'text-sm font-extralight text-start  max-w-[280px] md:text-[13px] md:max-w-[221px] xl:text-lg xl:max-w-[293px] xl:mt-auto xl:leading-[1.33]',
+                  slide.id === 1 && 'mt-[34px] xl:mt-0',
                   slide.id === 2 && 'mt-[74px] md:mt-[54px]',
                   slide.id === 3 && 'mt-[74px] md:mt-[54px]',
                   slide.id === 4 && 'mt-[54px] md:mt-[34px]',
-                  slide.id === 5 && 'mt-[34px] md:mt-[34px]'
+                  slide.id === 5 && 'mt-[34px] md:mt-[34px] xl:mt-0'
                 )}
               >
                 {slide.description}
