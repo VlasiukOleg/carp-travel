@@ -21,33 +21,40 @@ export default function Career({}: CareerProps) {
       <div className={styles.career}>
         <Section>
           <Container>
-            <div className="md:flex justify-between">
+            <div className="md:flex md:justify-between md:items-center">
               <SectionTitle>
                 <span className="font-thin">{career.title}</span>{' '}
                 {career.highlightedTitle}
               </SectionTitle>
 
-              <Text addStyle="max-w-[179px]  mt-6 mb-9 ml-auto md:ml-0 md:max-w-[221px] md:my-0 md:text-[13px]">
+              <Text addStyle="max-w-[179px]  mt-6 mb-9 ml-auto md:ml-0 md:max-w-[221px] md:my-0 md:text-[13px] xl:text-lg  xl:max-w-[293px]">
                 {career.description}
               </Text>
             </div>
-            <h3 className="font-extralight text-3xl uppercase text-right  md:w-[221px]">
+            <h3 className="font-extralight text-3xl uppercase text-right  md:w-[221px] xl:hidden xl:text-4xl">
               {career.subtitle}
             </h3>
-            <div className="md:flex md:gap-5  md:mt-14">
-              <div>
-                <ul className="flex flex-col gap-4 mt-9 max-w-[181px] md:max-w-[221px] md:gap-6 md:mt-0">
+            <div className="md:flex md:gap-5  md:mt-14 xl:gap-6 xl:justify-end">
+              <div className="max-w-[181px] md:max-w-[221px] xl:max-w-[562px]">
+                <h3 className="text-4xl mb-11 font-extralight  uppercase text-right  w-[252px] hidden xl:block ">
+                  {career.subtitle}
+                </h3>
+                <ul className="flex flex-col gap-4 mt-9   md:gap-6 md:mt-0 ">
                   {benefitsList.map(({ title, description }) => (
-                    <li key={title} className="text-end">
-                      <p className="text-sm mb-2 md:text-base">{title}</p>
-                      <p className="text-xs font-extralight">{description}</p>
+                    <li key={title} className="text-end xl:flex xl:justify-end">
+                      <p className="text-sm mb-2 md:text-base xl:text-lg xl:mb-0">
+                        {title}
+                      </p>
+                      <p className="text-xs font-extralight xl:max-w-[285px] xl:leading-6">
+                        {description}
+                      </p>
                     </li>
                   ))}
                 </ul>
               </div>
 
               <div className="hidden md:block">
-                <Text addStyle="max-w-[179px] md:text-[13px] md:max-w-[221px] md:mb-8">
+                <Text addStyle="max-w-[179px] md:text-[13px] md:max-w-[221px] md:mb-8 xl:text-lg xl:max-w-[234px] xl:leading-6 xl:mb-4">
                   {career.formTitle}
                 </Text>
                 <CareerForm />

@@ -26,7 +26,7 @@ export default function InputField({
   return (
     <label
       className={clsx(
-        'block mb-4 font-extralight text-xs tracking-[0.2em]',
+        'block mb-4 font-extralight text-xs tracking-[0.2em] xl:mb-6',
         error && 'text-[#ff5757]'
       )}
     >

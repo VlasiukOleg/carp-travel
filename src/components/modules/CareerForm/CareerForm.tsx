@@ -46,11 +46,11 @@ export default function CareerForm(props: CareerFormProps) {
 
   return (
     <form
-      className="md:flex md:gap-5"
+      className="md:flex md:gap-5 xl:gap-6"
       onSubmit={handleSubmit(onSubmit)}
       autoComplete="off"
     >
-      <div className="md:w-[221px]">
+      <div className="md:w-[221px] xl:w-[290px]">
         <InputField
           label="Full Name"
           name="fullname"
@@ -93,8 +93,8 @@ export default function CareerForm(props: CareerFormProps) {
             className="hidden peer/draft"
             {...register('confirm', {})}
           />
-          <div className="flex items-center justify-center w-[24px] h-[22px] bg-black border-[1px] border-white peer-checked/draft:hidden md:w-[34px]"></div>
-          <div className="items-center justify-center w-[24px] h-[22px] bg-black border-[1px] border-white hidden peer-checked/draft:flex">
+          <div className="flex items-center justify-center w-[24px] h-[22px] bg-black border-[1px] border-white peer-checked/draft:hidden md:w-[32px] xl:w-[26px]"></div>
+          <div className="items-center justify-center w-[24px] h-[22px] bg-black border-[1px] border-white hidden peer-checked/draft:flex md:w-[32px] xl:w-[26px]">
             <div className=" top-1 left-1 w-3.5 h-3.5 bg-white"></div>
           </div>
 
@@ -104,7 +104,7 @@ export default function CareerForm(props: CareerFormProps) {
         </label>
       </div>
 
-      <div>
+      <div className="xl:w-[290px]">
         <label className="'block mb-4 font-extralight text-xs tracking-[0.2em] hidden md:block">
           <span className="inline-block mb-1">Message</span>
           <textarea
