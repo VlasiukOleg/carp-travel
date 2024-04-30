@@ -21,60 +21,64 @@ export default function Contacts({}: ContactsProps) {
             <span className="font-thin">{contacts.title}</span>{' '}
             {contacts.highlightedTitle}
           </SectionTitle>
-          <div className="md:flex md:mt-9 md:mb-16 md:pl-8">
-            <div>
-              <div className="flex gap-5 mt-9 mb-6 md:mt-0">
-                <ul className="text-right w-[175px] md:w-[187px]">
-                  <li className="text-sm leading-6 md:text-base">
-                    <a href="tel:+380981234567">+38 (098) 12 34 567</a>
-                  </li>
-                  <li className="text-sm leading-6 md:text-base">
-                    <a href="tel:+380731234567">+38 (073) 12 34 567</a>
-                  </li>
-                </ul>
-                <p className="text-xs font-extralight leading-6 ">
-                  Phone Number
-                </p>
-              </div>
-
-              <div className="flex gap-5  mb-6">
-                <div className="w-[175px] text-right md:w-[187px]">
-                  <a
-                    href="mailto:support@carptravel.com"
-                    className=" text-sm leading-6 md:text-base"
-                  >
-                    support@carptravel.com
-                  </a>
+          <div className="xl:flex xl:mt-[71px]">
+            <div className="md:flex md:mt-9 md:mb-16 md:pl-8 xl:block xl:flex-grow xl:my-0 xl:pl-20">
+              <div>
+                <div className="flex gap-5 mt-9 mb-6 md:mt-0 xl:mb-16">
+                  <ul className="text-right w-[175px] md:w-[187px] xl:w-[210px]">
+                    <li className="text-sm leading-6 md:text-base xl:text-lg">
+                      <a href="tel:+380981234567">+38 (098) 12 34 567</a>
+                    </li>
+                    <li className="text-sm leading-6 md:text-base xl:text-lg">
+                      <a href="tel:+380731234567">+38 (073) 12 34 567</a>
+                    </li>
+                  </ul>
+                  <p className="text-xs font-extralight leading-6 ">
+                    Phone Number
+                  </p>
                 </div>
 
-                <p className="text-xs font-extralight leading-6 ">E-mail</p>
+                <div className="flex gap-5  mb-6 xl:mb-[124px]">
+                  <div className="w-[175px] text-right md:w-[187px] xl:w-[210px]">
+                    <a
+                      href="mailto:support@carptravel.com"
+                      className=" text-sm leading-6 md:text-base xl:text-lg"
+                    >
+                      support@carptravel.com
+                    </a>
+                  </div>
+
+                  <p className="text-xs font-extralight leading-6 ">E-mail</p>
+                </div>
+              </div>
+
+              <div className="flex gap-5 mb-3 xl:flex-row-reverse xl:justify-end">
+                <p className="text-xs text-right font-extralight leading-6 w-[175px] xl:w-max">
+                  Follow us
+                </p>
+                <ul className="flex-grow xl:w-[210px] xl:flex-grow-0 xl:text-right">
+                  <li>
+                    <SocialLink href="https://facebook.com">
+                      facebook
+                    </SocialLink>
+                  </li>
+                  <li>
+                    <SocialLink href="https://instagram.com">
+                      instagram
+                    </SocialLink>
+                  </li>
+                  <li>
+                    <SocialLink href="https://youtube.com">youtube</SocialLink>
+                  </li>
+                  <li>
+                    <SocialLink href="https://tiktok.com">tiktok</SocialLink>
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <div className="flex gap-5 mb-3">
-              <p className="text-xs text-right font-extralight leading-6 w-[175px]">
-                Follow us
-              </p>
-              <ul className="flex-grow ">
-                <li>
-                  <SocialLink href="https://facebook.com">facebook</SocialLink>
-                </li>
-                <li>
-                  <SocialLink href="https://instagram.com">
-                    instagram
-                  </SocialLink>
-                </li>
-                <li>
-                  <SocialLink href="https://youtube.com">youtube</SocialLink>
-                </li>
-                <li>
-                  <SocialLink href="https://tiktok.com">tiktok</SocialLink>
-                </li>
-              </ul>
-            </div>
+            <ContactForm />
           </div>
-
-          <ContactForm />
         </Container>
       </Section>
     </div>

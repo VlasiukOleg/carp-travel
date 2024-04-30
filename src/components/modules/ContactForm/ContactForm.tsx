@@ -40,32 +40,37 @@ export default function ContactForm({}: ContactFormProps) {
 
   return (
     <form
-      className="md:flex md:items-baseline md:gap-5"
+      className="md:flex md:items-baseline md:gap-5 xl:block xl:w-[607px]"
       onSubmit={handleSubmit(onSubmit)}
       autoComplete="off"
     >
-      <div className="md:w-[221px]">
-        <InputField
-          label="Full Name"
-          name="fullname"
-          placeholder="John Smith"
-          register={register}
-          error={errors?.fullname}
-        />
-        <InputField
-          label="E-mail"
-          name="email"
-          placeholder="johnsmith@email.com"
-          register={register}
-          error={errors?.email}
-        />
+      <div className="md:w-[221px] xl:flex xl:gap-7 xl:w-[607px] xl:mb-10">
+        <div className="xl:w-[293px]">
+          {' '}
+          <InputField
+            label="Full Name"
+            name="fullname"
+            placeholder="John Smith"
+            register={register}
+            error={errors?.fullname}
+          />
+        </div>
+        <div className="flex-grow">
+          <InputField
+            label="E-mail"
+            name="email"
+            placeholder="johnsmith@email.com"
+            register={register}
+            error={errors?.email}
+          />
+        </div>
       </div>
 
       <div className="flex-grow">
         <label className="'block mb-4 font-extralight text-xs tracking-[0.2em]">
           <span className="inline-block mb-1">Message</span>
           <textarea
-            className="text-[13px]  bg-white bg-opacity-5 px-2 py-1.5 placeholder:text-white  placeholder:opacity-20  w-full h-[196px] focus:outline-none focus:bg-opacity-10 resize-none md:h-[221px]"
+            className="text-[13px]  bg-white bg-opacity-5 px-2 py-1.5 placeholder:text-white  placeholder:opacity-20  w-full h-[196px] focus:outline-none focus:bg-opacity-10 resize-none md:h-[221px] xl:h-[174px]"
             {...register('message', {})}
           />
         </label>
