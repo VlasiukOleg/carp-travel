@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
-import { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 
 import { Swiper as SwiperReact, SwiperSlide, SwiperRef } from 'swiper/react';
 import { EffectFade } from 'swiper/modules';
