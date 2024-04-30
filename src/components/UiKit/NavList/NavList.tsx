@@ -11,7 +11,9 @@ export default function NavList({}: NavListProps) {
     <nav>
       <ul className="flex flex-col items-center gap-12 md:flex-row md:gap-6 xl:gap-14">
         {navList.map((item, i) => (
-          <NavListItem key={i}>{item}</NavListItem>
+          <li key={i}>
+            <NavListItem>{item}</NavListItem>
+          </li>
         ))}
       </ul>
     </nav>
