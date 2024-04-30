@@ -2,11 +2,11 @@ import React from 'react';
 
 import clsx from 'clsx';
 
-import Section from '@/components/UiKit/Section/Section';
-import Container from '@/components/Container/Container';
-import SectionTitle from '@/components/UiKit/SectionTitle/SectionTitle';
-import { Text } from '@/components/UiKit/Text/Text';
-import CareerForm from '@/components/Modules/CareerForm/CareerForm';
+import Section from '../../components/UiKit/Section/Section';
+import Container from '../../components/Container/Container';
+import SectionTitle from '../../components/UiKit/SectionTitle/SectionTitle';
+import { Text } from '../../components/UiKit/Text/Text';
+import CareerForm from '../../components/Modules/CareerForm/CareerForm';
 
 import career from '../../data/career.json';
 import { benefitsList } from '../../data/benefitsList.js';

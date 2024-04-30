@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Section from '@/components/UiKit/Section/Section';
-import Container from '@/components/Container/Container';
-import SectionTitle from '@/components/UiKit/SectionTitle/SectionTitle';
-import SocialLink from '@/components/UiKit/SocialLink/SocialLink';
-import ContactForm from '@/components/Modules/ContactForm/ContactForm';
+import Section from '../../components/UiKit/Section/Section';
+import Container from '../../components/Container/Container';
+import SectionTitle from '../../components/UiKit/SectionTitle/SectionTitle';
+import SocialLink from '../../components/UiKit/SocialLink/SocialLink';
+import ContactForm from '../../components/Modules/ContactForm/ContactForm';
 
 import contacts from '../../data/contacts.json';
 

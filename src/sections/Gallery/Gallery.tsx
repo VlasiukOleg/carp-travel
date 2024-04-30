@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Section from '@/components/UiKit/Section/Section';
-import Container from '@/components/Container/Container';
-import SectionTitle from '@/components/UiKit/SectionTitle/SectionTitle';
-import GalleryImageList from '@/components/Modules/GalleryImageList/GalleryImageList';
-import GallerySwiper from '@/components/Modules/GallerySwiper/GallerySwiper';
+import Section from '../../components/UiKit/Section/Section';
+import Container from '../../components/Container/Container';
+import SectionTitle from '../../components/UiKit/SectionTitle/SectionTitle';
+import GalleryImageList from '../../components/Modules/GalleryImageList/GalleryImageList';
+import GallerySwiper from '../../components/Modules/GallerySwiper/GallerySwiper';
 
 import gallery from '../../data/gallery.json';
 
