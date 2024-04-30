@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
-import InputField from '@/components/UiKit/InputField/InputField';
+import InputFieldCareer from '@/components/UiKit/InputField/InputFieldCareer';
 
 export type FormValues = {
   fullname: string;
@@ -51,28 +51,28 @@ export default function CareerForm(props: CareerFormProps) {
       autoComplete="off"
     >
       <div className="md:w-[221px] xl:w-[290px]">
-        <InputField
+        <InputFieldCareer
           label="Full Name"
           name="fullname"
           placeholder="John Smith"
           register={register}
           error={errors?.fullname}
         />
-        <InputField
+        <InputFieldCareer
           label="E-mail"
           name="email"
           placeholder="johnsmith@email.com"
           register={register}
           error={errors?.email}
         />
-        <InputField
+        <InputFieldCareer
           label="Position"
           name="position"
           placeholder="Position"
           register={register}
           error={errors?.position}
         />
-        <InputField
+        <InputFieldCareer
           label="Phone"
           name="phone"
           placeholder="+ 38 (097) 12 34 567"

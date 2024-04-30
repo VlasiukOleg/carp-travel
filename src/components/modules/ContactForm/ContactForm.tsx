@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
-import InputField from '@/components/UiKit/InputField/InputField';
+import InputFieldContact from '@/components/UiKit/InputField/InputFieldConttact';
 
 export type FormContactValues = {
   fullname: string;
@@ -47,7 +47,7 @@ export default function ContactForm({}: ContactFormProps) {
       <div className="md:w-[221px] xl:flex xl:gap-7 xl:w-[607px] xl:mb-10">
         <div className="xl:w-[293px]">
           {' '}
-          <InputField
+          <InputFieldContact
             label="Full Name"
             name="fullname"
             placeholder="John Smith"
@@ -56,7 +56,7 @@ export default function ContactForm({}: ContactFormProps) {
           />
         </div>
         <div className="flex-grow">
-          <InputField
+          <InputFieldContact
             label="E-mail"
             name="email"
             placeholder="johnsmith@email.com"

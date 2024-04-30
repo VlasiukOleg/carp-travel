@@ -5,24 +5,23 @@ import clsx from 'clsx';
 import { FieldError } from 'react-hook-form';
 import { UseFormRegister } from 'react-hook-form';
 
-import { FormValues } from '@/components/Modules/CareerForm/CareerForm';
 import { FormContactValues } from '@/components/Modules/ContactForm/ContactForm';
 
-export interface InputFieldProps
+export interface InputFieldContactProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
-  register: UseFormRegister<FormValues>;
+  register: UseFormRegister<FormContactValues>;
   label: string;
-  name: keyof FormValues;
+  name: keyof FormContactValues;
   error?: FieldError | undefined;
 }
 
-export default function InputField({
+export default function InputFieldContact({
   name,
   register,
   label,
   error,
   ...rest
-}: InputFieldProps) {
+}: InputFieldContactProps) {
   return (
     <label
       className={clsx(
