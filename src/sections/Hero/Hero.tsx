@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './hero.module.css';
+import styles from './Hero.module.css';
 
 import Section from '@/components/UiKit/Section/Section';
 import Container from '@/components/Container/Container';
