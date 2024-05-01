@@ -91,10 +91,10 @@ export default function CareerForm() {
             className="hidden peer/draft"
             {...register('confirm', {})}
           />
-          <div className="flex items-center justify-center w-[24px] h-[22px] bg-black border-[1px] border-white peer-checked/draft:hidden md:w-[32px] xl:w-[26px]"></div>
-          <div className="items-center justify-center w-[24px] h-[22px] bg-black border-[1px] border-white hidden peer-checked/draft:flex md:w-[32px] xl:w-[26px]">
-            <div className=" top-1 left-1 w-3.5 h-3.5 bg-white"></div>
-          </div>
+          <span className="flex items-center justify-center w-[24px] h-[22px] bg-black border-[1px] border-white peer-checked/draft:hidden md:w-[32px] xl:w-[26px]"></span>
+          <span className="items-center justify-center w-[24px] h-[22px] bg-black border-[1px] border-white hidden peer-checked/draft:flex md:w-[32px] xl:w-[26px]">
+            <span className=" top-1 left-1 w-3.5 h-3.5 bg-white"></span>
+          </span>
 
           <span className="inline-block md:leading-5">
             I confirm my consent to the processing of personal data.
