@@ -10,7 +10,7 @@ import styles from './About.module.css';
 
 export default function About() {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="About">
       <Section>
         <Container>
           <div className="md:flex md:gap-20 md:mb-16 xl:gap-6">

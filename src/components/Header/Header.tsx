@@ -25,7 +25,7 @@ export default function Header({}: HeaderProps) {
           <div className="flex justify-between items-center">
             <Logo pathname="/" src="/icons/logo.svg" alt="logo icon" />
             <div className="hidden md:block">
-              <NavList />
+              <NavList onClick={() => null} />
             </div>
 
             <MenuBtn onClick={toggleMobileMenu}>Menu</MenuBtn>

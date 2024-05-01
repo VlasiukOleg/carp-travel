@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import clsx from 'clsx';
 
@@ -24,7 +24,7 @@ export default function MobileMenu({
       <header className="absolute top-11 right-5">
         <MenuBtn onClick={onToggleMobileMenu}>Close</MenuBtn>
       </header>
-      <NavList />
+      <NavList onClick={onToggleMobileMenu} />
     </div>
   );
 }

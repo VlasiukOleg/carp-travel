@@ -1,6 +1,8 @@
+'use client';
+
 import React from 'react';
 
-import styles from './Hero.module.css';
+import { Link as ScrollLink } from 'react-scroll';
 
 import Section from '@/components/UiKit/Section/Section';
 import Container from '@/components/Container/Container';
@@ -8,11 +10,13 @@ import Button from '@/components/UiKit/Button/Button';
 
 import hero from '../../data/hero.json';
 
+import styles from './Hero.module.css';
+
 export interface HeroProps {}
 
 export default function Hero({}: HeroProps) {
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero} id="Hero">
       <Section>
         <Container>
           <div className="flex justify-end mb-6 md:hidden">
@@ -47,7 +51,9 @@ export default function Hero({}: HeroProps) {
               <p className="text-justify font-extralight md:mt-14 mb-7 xl:mt-[181px] xl:tracking-wider">
                 {hero.description}
               </p>
-              <Button>Join Now</Button>
+              <ScrollLink to="Contacts" smooth={true} duration={500}>
+                <Button>Join Now</Button>
+              </ScrollLink>
             </div>
           </div>
         </Container>
@@ -55,5 +61,3 @@ export default function Hero({}: HeroProps) {
     </div>
   );
 }
-
-// w-full text-center bg-white bg-opacity-10

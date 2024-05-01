@@ -32,7 +32,7 @@ export default function OfferSwiper({}: OfferSwiperProps) {
 
   return (
     <>
-      <>
+      <div id="Services">
         <SwiperReact
           className="mySwiper"
           ref={swiperRef}
@@ -50,7 +50,7 @@ export default function OfferSwiper({}: OfferSwiperProps) {
             </SwiperSlide>
           ))}
         </SwiperReact>
-      </>
+      </div>
     </>
   );
 }

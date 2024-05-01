@@ -16,7 +16,7 @@ import styles from './Career.module.css';
 export default function Career() {
   return (
     <>
-      <div className={styles.career}>
+      <div className={styles.career} id="Career">
         <Section>
           <Container>
             <div className="md:flex md:justify-between md:items-center">
