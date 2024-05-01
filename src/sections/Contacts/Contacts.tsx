@@ -1,18 +1,16 @@
 import React from 'react';
 
-import Section from '../../components/UiKit/Section/Section';
-import Container from '../../components/Container/Container';
-import SectionTitle from '../../components/UiKit/SectionTitle/SectionTitle';
-import SocialLink from '../../components/UiKit/SocialLink/SocialLink';
-import ContactForm from '../../components/Modules/ContactForm/ContactForm';
+import Section from '@/components/UiKit/Section/Section';
+import Container from '@/components/Container/Container';
+import SectionTitle from '@/components/UiKit/SectionTitle/SectionTitle';
+import SocialLink from '@/components/UiKit/SocialLink/SocialLink';
+import ContactForm from '@/components/Modules/ContactForm/ContactForm';
 
 import contacts from '../../data/contacts.json';
 
 import styles from './Contacts.module.css';
 
-export interface ContactsProps {}
-
-export default function Contacts({}: ContactsProps) {
+export default function Contacts() {
   return (
     <div className={styles.contact}>
       <Section>

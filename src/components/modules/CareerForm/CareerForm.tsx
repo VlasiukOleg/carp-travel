@@ -26,9 +26,7 @@ const careerValidationSchema = Yup.object({
   confirm: Yup.boolean().required(),
 });
 
-export interface CareerFormProps {}
-
-export default function CareerForm(props: CareerFormProps) {
+export default function CareerForm() {
   const {
     register,
     handleSubmit,

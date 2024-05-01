@@ -7,11 +7,11 @@ import { EffectFade } from 'swiper/modules';
 
 import Offer from '@/sections/Offer/Offer';
 
+import { offerSlides } from '../../../sections/Offer/offers';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
-
-import { offerSlides } from '../../../sections/Offer/offers';
 
 export interface OfferSwiperProps {}
 

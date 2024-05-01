@@ -20,9 +20,7 @@ const contactValidationSchema = Yup.object({
   message: Yup.string(),
 });
 
-export interface ContactFormProps {}
-
-export default function ContactForm({}: ContactFormProps) {
+export default function ContactForm() {
   const {
     register,
     handleSubmit,

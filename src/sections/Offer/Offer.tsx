@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 
-import Section from '../../components/UiKit/Section/Section';
-import Container from '../../components/Container/Container';
-import SectionTitle from '../../components/UiKit/SectionTitle/SectionTitle';
+import Section from '@/components/UiKit/Section/Section';
+import Container from '@/components/Container/Container';
+import SectionTitle from '@/components/UiKit/SectionTitle/SectionTitle';
 
 import { OfferSlide } from './offers';
 
