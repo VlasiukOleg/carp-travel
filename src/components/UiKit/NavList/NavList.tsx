@@ -19,7 +19,6 @@ export default function NavList({ onClick }: NavListProps) {
         {navList.map((item, i) => (
           <li key={i}>
             <Link
-              href="#"
               to={item}
               smooth={true}
               duration={500}

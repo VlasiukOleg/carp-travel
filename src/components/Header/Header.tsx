@@ -22,14 +22,14 @@ export default function Header({}: HeaderProps) {
     <>
       <div className="pt-9 absolute inset-x-0 top-0 md:pt-6">
         <Container>
-          <div className="flex justify-between items-center">
+          <header className="flex justify-between items-center">
             <Logo pathname="/" src="/icons/logo.svg" alt="logo icon" />
             <div className="hidden md:block">
               <NavList onClick={() => null} />
             </div>
 
             <MenuBtn onClick={toggleMobileMenu}>Menu</MenuBtn>
-          </div>
+          </header>
         </Container>
       </div>
       <MobileMenu
