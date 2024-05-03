@@ -1,0 +1,16 @@
+.line::after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity ease-in-out 250ms;
+}
+
+.line:hover::after,
+.line:focus::after {
+  opacity: 1;
+}

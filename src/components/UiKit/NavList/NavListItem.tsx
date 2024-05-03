@@ -1,6 +1,9 @@
 import React from 'react';
+import clsx from 'clsx';
 
 import { Link as ScrollLink } from 'react-scroll';
+
+import styles from '../../../styles/styles.module.css';
 
 export interface NavListItemProps {
   children: React.ReactNode;
@@ -14,10 +17,17 @@ export default function NavListItem({
   onClick,
 }: NavListItemProps) {
   return (
-    <ScrollLink to={to} smooth={true} duration={500} onClick={onClick}>
-      <span className="text-lg tracking-widest md:text-sm cursor-pointer">
-        {children}
-      </span>
+    <ScrollLink
+      to={to}
+      smooth={true}
+      duration={500}
+      onClick={onClick}
+      className={clsx(
+        'text-lg tracking-widest md:text-sm cursor-pointer relative',
+        styles.line
+      )}
+    >
+      {children}
     </ScrollLink>
   );
 }
