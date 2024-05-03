@@ -10,16 +10,16 @@ import Contacts from '@/sections/Contacts/Contacts';
 
 export default function Home() {
   return (
-    <main>
-      <div className="relative">
-        <Header />
+    <>
+      <Header />
+      <main>
         <Hero />
-      </div>
-      <About />
-      <OfferSwiper />
-      <Career />
-      <Gallery />
-      <Contacts />
-    </main>
+        <About />
+        <OfferSwiper />
+        <Career />
+        <Gallery />
+        <Contacts />
+      </main>
+    </>
   );
 }

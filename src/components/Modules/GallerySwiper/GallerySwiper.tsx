@@ -88,12 +88,14 @@ export default function GallerySwiper() {
         ))}
       </Swiper>
       <button
+        type="button"
         className="absolute z-10 bottom-10 left-10 text-[33px] font-thin uppercase xl:bottom-0 xl:left-[13rem]"
         onClick={onHandlePrevBtn}
       >
         Back
       </button>
       <button
+        type="button"
         className="absolute z-10 bottom-10 right-8 text-[33px] font-thin uppercase xl:bottom-0 xl:right-[12rem]"
         onClick={onHandleNextBtn}
       >
