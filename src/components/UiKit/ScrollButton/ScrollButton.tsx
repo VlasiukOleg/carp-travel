@@ -11,6 +11,7 @@ export interface ScrollButtonProps {
 export default function ScrollButton({ children }: ScrollButtonProps) {
   return (
     <ScrollLink
+      href='#'
       to="Contacts"
       smooth={true}
       duration={500}
