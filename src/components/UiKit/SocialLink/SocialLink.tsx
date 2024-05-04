@@ -11,7 +11,7 @@ export default function SocialLink({ children, href }: SocialLinkProps) {
       className="text-sm leading-6 no-underline underline-offset-1 hover:underline md:text-base xl:text-lg"
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer nofollow"
     >
       {children}
     </a>
