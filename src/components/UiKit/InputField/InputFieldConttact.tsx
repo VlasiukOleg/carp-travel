@@ -32,7 +32,7 @@ export default function InputFieldContact({
       <span className="inline-block mb-1">{label}</span>
       <input
         type="text"
-        className="text-[13px]  bg-white bg-opacity-5 px-2 py-1.5 placeholder:text-white  placeholder:opacity-20  w-full focus:outline-none focus:bg-opacity-10"
+        className="text-[13px]  bg-white bg-opacity-5 px-2 py-1.5 placeholder:text-white  placeholder:opacity-20  w-full focus:bg-opacity-10"
         {...register(name)}
         {...rest}
       />

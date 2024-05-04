@@ -68,14 +68,14 @@ export default function ContactForm() {
         <label className="'block mb-4 font-extralight text-xs tracking-[0.2em]">
           <span className="inline-block mb-1">Message</span>
           <textarea
-            className="text-[13px]  bg-white bg-opacity-5 px-2 py-1.5 placeholder:text-white  placeholder:opacity-20  w-full h-[196px] focus:outline-none focus:bg-opacity-10 resize-none md:h-[221px] xl:h-[174px]"
+            className="text-[13px]  bg-white bg-opacity-5 px-2 py-1.5 placeholder:text-white  placeholder:opacity-20  w-full h-[196px] focus:bg-opacity-10 resize-none md:h-[221px] xl:h-[174px]"
             {...register('message', {})}
           />
         </label>
 
         <button
           type="submit"
-          className="block font-medium text-3xl ml-auto uppercase"
+          className="block font-medium text-3xl ml-auto uppercase hover:scale-105 focus:scale-105 transition"
         >
           Send
         </button>

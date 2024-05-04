@@ -61,7 +61,7 @@ export default function Offer({
                 {offerSlides.map((slide, index) => (
                   <li key={slide.id}>
                     <button
-                      className="pointer text-start flex items-center"
+                      className="pointer text-start flex items-center hover:scale-105 focus:scale-105 transition"
                       type="button"
                       onClick={() => {
                         onHandleCLickBtn(index);
