@@ -17,14 +17,14 @@ export default function Contacts() {
     <div className={styles.contact} id="Contacts">
       <Section>
         <Container>
-          <SectionTitle>
+          <SectionTitle addStyle="mb-9 xl:mb-[71px]">
             <span className="font-thin">{contacts.title}</span>{' '}
             {contacts.highlightedTitle}
           </SectionTitle>
-          <div className="xl:flex xl:mt-[71px]">
-            <div className="md:flex md:mt-9 md:mb-16 md:pl-8 xl:block xl:flex-grow xl:my-0 xl:pl-20">
+          <div className="xl:flex">
+            <div className="md:flex md:mb-16 md:pl-8 xl:block xl:flex-grow xl:my-0 xl:pl-20">
               <div>
-                <div className="flex gap-5 mt-9 mb-6 md:mt-0 xl:mb-16">
+                <div className="flex gap-5 mb-6 xl:mb-16">
                   <ul className="text-right w-[175px] md:w-[187px] xl:w-[210px]">
                     <li className="text-sm leading-6 md:text-base xl:text-lg hover:scale-105 focus:scale-105 transition">
                       <a href="tel:+380981234567">+38 (098) 12 34 567</a>

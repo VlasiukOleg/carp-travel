@@ -15,7 +15,7 @@ export default function About() {
         <Container>
           <div className="md:flex md:gap-20 md:mb-16 xl:gap-6">
             <div className="md:flex md:flex-col md:justify-between md:flex-grow xl:flex-grow-0">
-              <SectionTitle>
+              <SectionTitle addStyle="mb-2 md:mb-0">
                 <span className="font-thin">{about.title}</span>{' '}
                 {about.subtitle}
               </SectionTitle>

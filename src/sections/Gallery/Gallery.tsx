@@ -15,7 +15,7 @@ export default function Gallery() {
     <div className={styles.gallery} id="Gallery">
       <Section>
         <Container>
-          <SectionTitle>
+          <SectionTitle addStyle="mb-6 md:mb-16 xl:mb-6">
             <span className="font-thin">{gallery.title}</span>{' '}
             {gallery.highlightedTitle}
           </SectionTitle>

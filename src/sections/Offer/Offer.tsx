@@ -32,14 +32,14 @@ export default function Offer({
         <Container>
           <div className="md:flex md:gap-5 md:mb-9">
             <div className="md:w-[463px]">
-              <SectionTitle>
+              <SectionTitle addStyle="mb-6 md:mb-0">
                 {' '}
                 <span className="font-thin">{offer.title}</span>{' '}
                 {offer.subtitle}
               </SectionTitle>
             </div>
 
-            <p className="font-thin text-[43px] text-right mt-6 mb-4 md:text-[67px] md:my-0 md:leading-none xl:text-[98px]">
+            <p className="font-thin text-[43px] text-right  mb-4 md:text-[67px] md:my-0 md:leading-none xl:text-[98px]">
               0{slide.id}/
               <span className="text-white opacity-20">
                 0{offerSlides.length}
@@ -48,16 +48,16 @@ export default function Offer({
           </div>
 
           <div className="md:flex md:gap-5">
-            <div className="md:w-[463px] md:h-[370px] xl:w-[607px] xl:h-[429px]">
+            <div className="md:w-[463px] md:h-[370px] xl:w-[607px] xl:h-[429px] mb-3 md:mb-0">
               <Image src={slide.image} alt={slide.title} loading="lazy" />
             </div>
 
             <div className="xl:flex xl:flex-wrap xl:gap-14 xl:max-w-[605px] xl:relative">
               {' '}
-              <p className="text-xs text-right font-extralight mt-3 mb-6 tracking-[.2em] md:hidden">
+              <p className="text-xs text-right font-extralight  mb-6 tracking-[.2em] md:hidden">
                 {slide.actionText}
               </p>
-              <ul className="flex flex-col gap-4 items-start xl:gap-6">
+              <ul className="flex flex-col gap-4 items-start xl:gap-6 md:mb-6 xl:mb-0">
                 {offerSlides.map((slide, index) => (
                   <li key={slide.id}>
                     <button
@@ -88,7 +88,7 @@ export default function Offer({
               </ul>
               <p
                 className={clsx(
-                  'text-xs text-left font-extralight mt-6 tracking-[.2em] xl:mt-0  xl:absolute',
+                  'text-xs text-left font-extralight  tracking-[.2em] xl:mt-0  xl:absolute hidden md:block',
                   slide.id === 1 && 'xl:top-[6px] xl:left-[310px]',
                   slide.id === 2 && 'xl:top-[53px] xl:left-[295px]',
                   slide.id === 3 && 'xl:top-[114px] xl:left-[284px]',
@@ -101,11 +101,11 @@ export default function Offer({
               <p
                 className={clsx(
                   'text-sm font-extralight text-start  max-w-[280px] md:text-[13px] md:max-w-[221px] xl:text-lg xl:max-w-[293px] xl:mt-auto xl:leading-[1.33]',
-                  slide.id === 1 && 'mt-[34px] xl:mt-0',
+                  slide.id === 1 && 'mt-[34px]',
                   slide.id === 2 && 'mt-[74px] md:mt-[54px]',
                   slide.id === 3 && 'mt-[74px] md:mt-[54px]',
                   slide.id === 4 && 'mt-[54px] md:mt-[34px]',
-                  slide.id === 5 && 'mt-[34px] md:mt-[34px] xl:mt-0'
+                  slide.id === 5 && 'mt-[34px] md:mt-[34px]'
                 )}
               >
                 {slide.description}

@@ -32,7 +32,7 @@ export default function GallerySwiper() {
   };
 
   return (
-    <div className="hidden md:block relative md:mt-16 xl:mt-6">
+    <div className="hidden md:block relative ">
       <Swiper
         ref={swiperRef}
         effect={'coverflow'}

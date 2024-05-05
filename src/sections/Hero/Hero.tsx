@@ -41,10 +41,10 @@ export default function Hero() {
                 <span className="font-medium">{hero.labelNumber}</span>
                 {hero.labelTitle}
               </p>
-              <p className="uppercase font-light text-sm mt-[-8px] tracking-[1.85em] hidden md:block xl:text-base xl:tracking-[2.25em]">
+              <p className="uppercase font-light text-sm mt-[-8px] tracking-[1.85em] hidden md:block md:mb-14  xl:mb-[181px] xl:text-base xl:tracking-[2.25em]">
                 {hero.labelSubtitle}
               </p>
-              <p className="text-justify font-extralight md:mt-14 mb-7 xl:mt-[181px] xl:tracking-wider">
+              <p className="text-justify font-extralight  mb-7  xl:tracking-wider">
                 {hero.description}
               </p>
               <ScrollButton>Join Now</ScrollButton>

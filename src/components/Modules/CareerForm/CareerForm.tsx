@@ -77,7 +77,7 @@ export default function CareerForm() {
           register={register}
           error={errors?.phone}
         />
-        <label className="'block mb-4 font-extralight text-xs tracking-[0.2em] md:hidden">
+        <label className="block mb-4 md:mb-2 font-extralight text-xs tracking-[0.2em] md:hidden">
           <span className="inline-block mb-1">Message</span>
           <textarea
             className="text-[13px]  bg-white bg-opacity-5 px-2 py-1.5 placeholder:text-white  placeholder:opacity-20  w-full h-[196px] focus:outline-none focus:bg-opacity-10 resize-none"
@@ -85,7 +85,7 @@ export default function CareerForm() {
           />
         </label>
 
-        <label className="flex gap-2 mt-4 mb-4 font-extralight text-xs">
+        <label className="flex gap-2  mb-4 font-extralight text-xs">
           <input
             type="checkbox"
             className="hidden peer/draft"
