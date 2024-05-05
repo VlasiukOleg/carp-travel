@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide, SwiperRef } from 'swiper/react';
 import { EffectCoverflow } from 'swiper/modules';
 import clsx from 'clsx';
 
+import { galleryImages } from '../../../data/galleryImageList.js';
+
 import image1 from '../../../../public/image/gallery/gallery1.jpg';
 import image2 from '../../../../public/image/gallery/gallery2.jpg';
 import image3 from '../../../../public/image/gallery/gallery3.jpg';
@@ -69,7 +71,7 @@ export default function GallerySwiper() {
           },
         }}
       >
-        {[...slides, ...slides].map((slide, index) => (
+        {[...galleryImages, ...galleryImages].map((slide, index) => (
           <SwiperSlide key={index}>
             {({ isActive }) => (
               <div
@@ -81,7 +83,7 @@ export default function GallerySwiper() {
                     : ''
                 )}
               >
-                <Image src={slide} alt="Nature" />
+                <Image src={slide.image} alt={slide.alt} />
               </div>
             )}
           </SwiperSlide>
