@@ -1,4 +1,7 @@
-import * as React from 'react';
+import React from 'react';
+import clsx from 'clsx';
+
+import styles from '../../../styles/styles.module.css';
 
 export interface SocialLinkProps {
   children: React.ReactNode;
@@ -8,7 +11,10 @@ export interface SocialLinkProps {
 export default function SocialLink({ children, href }: SocialLinkProps) {
   return (
     <a
-      className="text-sm leading-6 no-underline underline-offset-1 hover:underline md:text-base xl:text-lg"
+      className={clsx(
+        'text-sm leading-6  md:text-base xl:text-lg relative',
+        styles.line
+      )}
       href={href}
       target="_blank"
       rel="noopener noreferrer nofollow"
