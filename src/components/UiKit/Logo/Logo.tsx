@@ -12,7 +12,7 @@ export interface LogoProps {
 export default function Logo({ pathname, src, alt }: LogoProps) {
   return (
     <Link href={pathname}>
-      <Image width={61} height={33} src={src} alt={alt} />
+      <Image width={61} height={33} src={src} alt={alt} priority={true} />
     </Link>
   );
 }
