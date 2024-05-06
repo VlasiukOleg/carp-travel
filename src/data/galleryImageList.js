@@ -5,14 +5,14 @@ import gallery3 from '../../public/image/gallery/gallery3.jpg';
 export const galleryImages = [
   {
     image: gallery1,
-    alt: "carpathian's mountains",
+    alt: 'carpathian mountain',
   },
   {
     image: gallery2,
-    alt: "carpathian's forest",
+    alt: 'carpathian forest',
   },
   {
     image: gallery3,
-    alt: "carpathian's lakes",
+    alt: 'carpathian lake',
   },
 ];

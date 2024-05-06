@@ -1,4 +1,17 @@
 {
   "title": "Contacts",
-  "highlightedTitle": "Us"
+  "highlightedTitle": "Us",
+  "phone": {
+    "title": "PhoneNumber",
+    "primaryNumber": "+38 (098) 12 34 567",
+    "secondaryNumber": "+38 (073) 12 34 567"
+  },
+  "email": {
+    "title": "E-mail",
+    "primaryEmail": "support@carptravel.com"
+  },
+  "social": {
+    "title": "Follow us",
+    "socialList": ["facebook", "instagram", "youtube", "tiktok"]
+  }
 }
