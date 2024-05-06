@@ -1,8 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import { useForm } from 'react-hook-form';
+import { useForm, UseFormSetValue } from 'react-hook-form';
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
@@ -29,6 +29,8 @@ const careerValidationSchema = Yup.object({
 export default function CareerForm() {
   const {
     register,
+    watch,
+    setValue,
     handleSubmit,
     formState: { errors, isSubmitSuccessful },
     reset,
@@ -37,7 +39,26 @@ export default function CareerForm() {
     mode: 'onChange',
   });
 
-  const onSubmit = (data: object) => {
+  useEffect(() => {
+    const subscription = watch((value, { name, type }) => {
+      const { confirm, ...dataToSave } = value;
+      localStorage.setItem('formData', JSON.stringify(dataToSave));
+    });
+    return () => subscription.unsubscribe();
+  }, [watch]);
+
+  useEffect(() => {
+    const savedData = localStorage.getItem('formData');
+    if (savedData) {
+      const parsedData = JSON.parse(savedData);
+
+      Object.entries(parsedData).forEach(([key, value]) => {
+        setValue(key as keyof FormValues, value as string | boolean);
+      });
+    }
+  }, [setValue]);
+
+  const onSubmit = (data: FormValues) => {
     reset();
     console.log(data);
   };

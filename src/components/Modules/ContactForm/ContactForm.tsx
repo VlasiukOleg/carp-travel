@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { useForm } from 'react-hook-form';
 import * as Yup from 'yup';
@@ -23,6 +23,8 @@ const contactValidationSchema = Yup.object({
 export default function ContactForm() {
   const {
     register,
+    watch,
+    setValue,
     handleSubmit,
     formState: { errors, isSubmitSuccessful },
     reset,
@@ -31,7 +33,25 @@ export default function ContactForm() {
     mode: 'onChange',
   });
 
-  const onSubmit = (data: object) => {
+  useEffect(() => {
+    const subscription = watch((value, { name, type }) => {
+      localStorage.setItem('formData', JSON.stringify(value));
+    });
+    return () => subscription.unsubscribe();
+  }, [watch]);
+
+  useEffect(() => {
+    const savedData = localStorage.getItem('formData');
+    if (savedData) {
+      const parsedData = JSON.parse(savedData);
+
+      Object.entries(parsedData).forEach(([key, value]) => {
+        setValue(key as keyof FormContactValues, value as string);
+      });
+    }
+  }, [setValue]);
+
+  const onSubmit = (data: FormContactValues) => {
     reset();
     console.log(data);
   };
